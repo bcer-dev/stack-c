@@ -33,7 +33,7 @@ That being said however, the size of a stack is also constant which can be a dra
 ## Usage
 
 To create a stack, first include `stack.h`.
-Then call the `create_stack()` function, which will return a stack on the stack (pun not intended) with a pointer to an int array of size `stack_sz`.
+Then call the `create_stack()` function, which will return a stack on the stack (pun not intended) with a pointer to an int array of size `stack_sz` on the heap.
 From here, you can use whichever stack functions you feel are necessary.
 
 ## Examples
