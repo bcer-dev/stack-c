@@ -3,7 +3,7 @@
 
 int main()
 {
-	stack s = create_stack();
+	stack s = create_stack(5);
 	if (s.items == NULL)
 	{
 		return 1;

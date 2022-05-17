@@ -1,16 +1,17 @@
 #include "stack.h"
 
-stack create_stack()
+stack create_stack(int stack_sz)
 {
     stack s;
     s.count = 0;
+    s.max = stack_sz;
     s.items = malloc(sizeof(int) * 5);
     return s;
 }
 
 void push(stack *st, int x)
 {
-    if (st->count == STACK_MAX)
+    if (st->count == st->max)
         return;
     st->items[st->count++] = x;
 }

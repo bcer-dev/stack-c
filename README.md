@@ -24,3 +24,35 @@ you could see it as:
 |   3!  | = 3 * 2! = 3 * 2 = 6
  -------
 ```
+
+## Time-complexity of a stack
+
+One of the best things about a stack is that all of it's operations run in O(1) time.
+That being said however, the size of a stack is also constant which can be a drawback.
+
+## Usage
+
+To create a stack, first include `stack.h`.
+Then call the `create_stack()` function, which will return a stack on the stack (pun not intended) with a pointer to an int array of size `stack_sz`.
+From here, you can use whichever stack functions you feel are necessary.
+
+## Examples
+
+### Reverse Array
+
+```C
+#include "stack.h"
+
+void reverse(int *input, int *output, int n)
+{
+	stack s = create_stack(n);
+	for (int i = 0; i < s.max; ++i)
+		push(&s, input[i]);
+
+	int i = 0;
+	while (!is_empty(&s))
+		output[i++] = pop(&s);
+
+	st_free(&s);
+}
+```
