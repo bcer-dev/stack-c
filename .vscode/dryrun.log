@@ -1,0 +1,9 @@
+make.exe --dry-run --keep-going --print-directory
+make.exe: Entering directory 'c:/Users/brayd/Documents/Coding/Projects/stack-c'
+gcc src\main.c -c
+gcc src\stack.c -c
+gcc main.o stack.o -o bin\app
+ 
+rm *.o
+make.exe: Leaving directory 'c:/Users/brayd/Documents/Coding/Projects/stack-c'
+ 
