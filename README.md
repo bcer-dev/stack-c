@@ -11,7 +11,7 @@ Stacks are a useful data structure with many uses. You can imagine it as a stack
 There are many things stacks can be used for. For instance, the stack in a computers memory is an instance of this. You can visualize this with recursion:
 
 ```
-n! = n * (n - 1), where 0! = 1
+n! = n * (n - 1)!, where 0! = 1
 If you were to call 3!,
 you could see it as:
  -------
